@@ -1,1 +1,1 @@
-## Build a Ecommerce Application with NodeJS/ Express
+## Build an Ecommerce Application with NodeJS/ Express
