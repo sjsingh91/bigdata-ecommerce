@@ -1,0 +1,39 @@
+{{# each products }}
+    <div class="container">
+        <div class="row">
+            <div class="thumbnail">
+                <img src="{{this.thumbUrl}}" alt="..." class="img-responsive" style="max-width: 100%">
+            </div>
+            <div class="col-xs-5" style="border:0px solid gray">
+                <h3>{{this.title}}</h3>
+                <h5 class="title-price"><small>Price</small></h5>
+                <h3 style="margin-top: 0px;">${{this.Price}}</h3>
+                <div class="section" style="padding-bottom:20px;">
+                    <h6 class="title-attr"><small>Quantity</small></h6>
+                    <div>
+                        <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
+                        <input value="1" />
+                        <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
+                    </div>
+                </div>
+                <div class="section" style="padding-bottom:20px;">
+                    <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Shopping Cart</button>
+                </div>
+                <div class="col-xs-9">
+                    <ul class="menu-items">
+                        <li class="active">Product Details</li>
+                    </ul>
+                    <div style="width:100%;border-top:1px solid silver">
+                        <p style="padding:15px;">
+                            <small>
+                                {{this.title}}
+                            </small>
+                        </p>
+                    </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+{{/each}}
+
